@@ -67,7 +67,10 @@
         "STAGE3={{user `stage3`}}",
         "VM_TYPE=virtualbox",
         "SCRIPTS=/tmp",
-        "COUNTRY={{user `country`}}"
+        "COUNTRY=USA",
+        "MAKEOPTS=-j3",
+        "TIMEZONE=UTC",
+        "KEYMAP=us"
       ],
       "scripts": [
         "provision.sh"
@@ -79,7 +82,6 @@
     "password": "packer",
     "stage3": "20170907",
     "username": "root",
-    "country": "USA",
     "headless": "false"
   }
 }
